@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Upper</title>
+</head>
+<body>
+    <script>
+        const convert = (toUpper = false) => {
+            const userStr = prompt('Enter some text...');
+            if (toUpper) {
+                alert(userStr.toUpperCase());
+            } else {
+                alert(userStr.toLowerCase());
+            }
+        }
+    </script>
+
+    <button onclick="convert(true)">Convert to Upper</button>
+    <button onclick="convert()">Convert to Lower</button>
+</body>
+</html>
